@@ -1,0 +1,53 @@
+extends layout.pug
+
+block content
+    .videoFloor
+        .svg_title
+            img(src="/images/title-1.svg")
+        iframe.video(width='640', height='360', src='https://www.youtube.com/embed/9aIkUo40xW8', frameborder='0', allowfullscreen='')
+
+    .about
+        .about__description
+            h2 Мы научимся:
+            p Рисовать любые объекты с любого ракурса, не привязываясь к референсу или фотке
+            p Делать много вариаций дизайна
+            p Рисовать объекты из головы, воображения
+            p Использовать программы и иные хитрости для ускорения и повышения эффективности
+        h1.h1.about__h1 Программа курса
+        each week, index in weeks
+            .week
+                .week__number #{index}
+                .week__body #{week.body}
+                    .week__sub #{week.sub}
+            
+
+
+    .orderForm
+        h1.orderTitle Записаться на курс
+        .form-group
+            .inputFloor
+                label Имя
+                    br
+                    #error1.error
+                input#name(type='text', name='name')
+                //display error message if name is not valid
+                small.text-danger
+            .inputFloor
+                label Эл.почта
+                    br
+                    #error2.error
+                input#email(type='text', name='email')
+                // display error message if name is not valid
+                small.text-danger
+            .inputFloor
+                label Послание миру
+                textarea#comment(name='comment')
+                // display error message if name is not valid
+                //small.text-danger(*ngIf='!signUpForm.controls.comment.valid')
+                //    | Name is required (minimum 5 characters).
+            button#submit_btn.btn.btn_m Записаться
+
+
+        #modal(style='display: none;')
+            p Заявка принята, спасибо! Добавьтесь в группу&nbsp;
+                a(href="https://vk.com/sketchcourse1") Вконтакте.

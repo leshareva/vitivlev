@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+    .page.paper
+        h1.h1(style="text-align: center;") #{ title }
+        .shop
+            .row
+                each item in items
+                    .col_33.col_s_100
+                        a(href=item.link).shop__item
+                            img(src=item.thumb)
+

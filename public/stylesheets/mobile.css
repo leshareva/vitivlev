@@ -1,0 +1,193 @@
+
+@media only all and (max-width: 600px) {
+
+    .header {
+        margin-top: 40px;
+        display: block;
+    }
+
+    .header__logo {
+        width: 180px;
+        margin: auto !important;
+        margin-bottom: 30px !important;
+    }
+
+
+
+    .logo__image {
+
+    }
+
+
+    .header__menu {
+        margin: auto;
+        width: 150px;
+
+    }
+
+    .header__menu a {
+        font-size: 12px;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+
+    .content__title {
+        text-align: center;
+        margin: auto;
+        padding: 0 40px;
+    }
+
+
+    .content__h1 {
+        font-size: 1.6em;
+    }
+    .content__title p {
+        text-align: center;
+        font-size: 1em;
+    }
+
+
+    .form {
+        padding: 0px;
+        width: 100%;
+    }
+
+
+    .form__h2 {
+        font-size: 1.6em;
+        margin: 30px 10px 10px 10px;
+    }
+
+    .form p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+
+    .form__voronej {
+        margin-top: 60px;
+        padding: 20px 0;
+    }
+
+    .form__voronej > .form__item {
+        margin: 20px 10px;
+    }
+
+
+
+
+    .form__item {
+        display: block;
+        margin: 20px 10px;
+    }
+
+    .form__item label {
+        font-size: 1em;
+    }
+
+    .form__item textarea {
+        width: 100%;
+        height: 200px;
+        font-size: 1.2em;
+    }
+
+
+    .page {
+        margin: 15px 0px;
+    }
+
+    .page__layout {
+        display: block !important;
+    }
+
+    .paper {
+        display: block;
+    }
+
+    .paper__phone {
+        background-color: white;
+        background-position: 10% 20% !important;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        padding-bottom: 40px;
+        padding-left: 90px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .paper__phone h2{
+        font-size: 1.2em;
+    }
+
+
+    .imagelink__apple {
+
+    }
+    .imagelink img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+
+    .work {
+        margin-bottom: 20px;
+        margin-top: 50px !important;
+    }
+
+    .about__text {
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .user {
+        top: -50px !important;
+    }
+
+    .userpic {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .user__name {
+        font-size: 18px;
+    }
+
+    .about {
+        margin: 80px 20px 40px 20px;
+        padding-bottom: 90px;
+    }
+
+    .col_100_s {
+        width: 100% !important;
+    }
+
+
+    .howmuch {
+        margin: 0 40px;
+    }
+    .steps {
+        padding: 0 40px 60px 40px !important;
+    }
+    .steps__layout {
+        display: block;
+    }
+    .steps__item {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__left {
+        margin: 20px 0px 0px 20px;
+    }
+    .footer__right {
+        margin: 20px 20px 0 0;
+    }
+}

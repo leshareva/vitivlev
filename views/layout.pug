@@ -1,0 +1,54 @@
+html
+    head
+        meta(charset='utf-8')
+        title #{title}
+        block scripts
+            script(src='/javascripts/jquery-3.1.1.min.js')
+            script(src='/javascripts/jquery.modal.min.js')
+            script(src='http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js')
+
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/jquery.modal.min.css', type='text/css', media='screen')
+        link(href='http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css', rel='stylesheet')
+        script(src='https://www.gstatic.com/firebasejs/3.6.10/firebase.js')
+        script.
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBpvXkV56055OjAhrFq7MFu7uvavDHQjco",
+                authDomain: "vitivlev-eb599.firebaseapp.com",
+                databaseURL: "https://vitivlev-eb599.firebaseio.com",
+                storageBucket: "vitivlev-eb599.appspot.com",
+                messagingSenderId: "1040176813411"
+            };
+
+            firebase.initializeApp(config);
+    body
+        .wrapper
+            block wrapper
+                .header
+                    a(href="/").logo.imagelink
+                        img(src="/images/logo.png")
+
+                    .menu
+                        //a(href="/") Работы студентов
+                        .menu__item
+                            a(href="/", class=course ? 'header__menu_active' : '') Курс
+                        .menu__item
+                            a(href="/shop", class=shop ? 'header__menu_active' : '') Магазин
+                        .menu__item
+                            a(href="/about", class=about ? 'header__menu_active' : '') Об&nbsp;инструкторе
+                        .menu__item
+                            a(href="/students", class=students ? 'header__menu_active' : '') Работы студентов
+                    .signIn
+                        a(href="http://course.vitivlev.ru") Войти
+
+
+
+            block content
+            block foot
+                .footer
+                    script(src='/javascripts/main.js')
+                    p © 2017 Виталик Ивлев
+
+
